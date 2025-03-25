@@ -1,79 +1,26 @@
-$primary-color: #f8a8b8;
-$primary-hover: #e89aa8;
-$bg-light: #fce4ec;
-$dark: #343a40;
-$text-light: white;
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$bg-color: #f8f9fa;
 
-.navbar {
-  background-color: $dark;
-  
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $bg-color;
 }
 
 .hero {
-  text-align: center;
-}
-
-#about {
-  text-align: center;
-  margin: 50px auto;
-
-  .lead {
-    font-size: 1.2rem;
-  }
-
-  img {
-    margin-top: 20px;
-    border-radius: 50%;
-    width: 150px;
-  }
-}
-
-#portfolio {
-  background-color: $bg-light;
-  padding: 50px 0;
-
-  .gallery-img {
-    border: 3px solid white;
-    margin-bottom: 15px;
-  }
-}
-
-#contact {
-  background-color: lighten($bg-light, 5%);
-  padding: 50px 0;
-  text-align: center;
-
-  h2 {
-    font-weight: bold;
-  }
-
-  form {
-    max-width: 400px;
-    margin: auto;
-
-    input {
-      margin-bottom: 15px;
-    }
-  }
-}
-
-.btn-pink {
-  background-color: $primary-color;
-  border-color: $primary-color;
+  background: url('https://upload.wikimedia.org/wikipedia/uk/b/b5/Totally_Spies.png') center/cover no-repeat;
   color: white;
-
-  &:hover {
-    background-color: $primary-hover;
-    border-color: $primary-hover;
-  }
+  padding: 100px 0;
 }
 
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: $dark;
-  color: $text-light;
+h2 {
+  color: $primary-color;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border: none;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
 }
